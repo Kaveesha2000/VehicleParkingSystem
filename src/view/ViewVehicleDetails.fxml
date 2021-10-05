@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="vehicleContext" prefHeight="385.0" prefWidth="521.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ViewVehicleDetailsController">
+   <children>
+      <AnchorPane prefHeight="65.0" prefWidth="521.0" style="-fx-background-color: #3d3d3d;">
+         <children>
+            <Label layoutX="194.0" layoutY="20.0" text="Vehicle Details" textFill="WHITE">
+               <font>
+                  <Font name="Bell MT Bold" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <TableView fx:id="vehicleTbl" layoutX="36.0" layoutY="116.0" prefHeight="200.0" prefWidth="437.0" stylesheets="@../styles/style.css">
+        <columns>
+          <TableColumn fx:id="colVehicleNo" prefWidth="86.0" text="Vehicle No" />
+          <TableColumn fx:id="colVehicleType" prefWidth="120.0" text="Vehicle Type" />
+            <TableColumn fx:id="colMaxWeight" prefWidth="115.0" text="Max Weight" />
+            <TableColumn fx:id="colNoOfPassengers" prefWidth="115.0" text="No Of Passengers" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

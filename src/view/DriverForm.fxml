@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="driverContext" prefHeight="385.0" prefWidth="521.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DriverFormController">
+   <children>
+      <AnchorPane layoutY="-1.0" prefHeight="65.0" prefWidth="521.0" style="-fx-background-color: #3d3d3d;">
+         <children>
+            <Label alignment="CENTER" layoutY="20.0" prefHeight="25.0" prefWidth="521.0" text="Add Driver" textFill="WHITE">
+               <font>
+                  <Font name="Bell MT Bold" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <JFXButton alignment="CENTER" layoutX="377.0" layoutY="333.0" onAction="#addDriver" prefHeight="30.0" prefWidth="116.0" style="-fx-background-color: #003399; -fx-background-radius: 180;" text="+Add Driver" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Label layoutX="71.0" layoutY="89.0" text="Driver Name">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtDName" layoutX="163.0" layoutY="72.0" onAction="#moveToNIC" onKeyReleased="#checkingDName" prefHeight="30.0" prefWidth="327.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <Label layoutX="125.0" layoutY="140.0" text="NIC">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtDNIC" layoutX="162.0" layoutY="121.0" onAction="#moveToLiceneNo" onKeyReleased="#checkingDNIC" prefHeight="30.0" prefWidth="327.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <Label layoutX="43.0" layoutY="188.0" text="Driver Licene No">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtDliceneNo" layoutX="164.0" layoutY="171.0" onAction="#moveToAddress" onKeyReleased="#checkingDLiceneNo" prefHeight="30.0" prefWidth="327.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <Label layoutX="99.0" layoutY="238.0" text="Address">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtDAddress" layoutX="163.0" layoutY="221.0" onAction="#moveToContact" onKeyReleased="#checkingDAddress" prefHeight="30.0" prefWidth="327.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <Label layoutX="76.0" layoutY="288.0" text="Contact No">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtDContact" layoutX="164.0" layoutY="271.0" onKeyReleased="#checkingDContactNo" prefHeight="30.0" prefWidth="327.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton alignment="CENTER" layoutX="251.0" layoutY="334.0" onAction="#viewDetails" prefHeight="30.0" prefWidth="116.0" style="-fx-background-color: #003399; -fx-background-radius: 180;" text="view" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Label fx:id="dlabel1" layoutX="164.0" layoutY="104.0" prefHeight="17.0" prefWidth="327.0" textFill="RED" />
+      <Label fx:id="dlabel2" layoutX="161.0" layoutY="154.0" prefHeight="17.0" prefWidth="327.0" textFill="RED" />
+      <Label fx:id="dlabel3" layoutX="164.0" layoutY="203.0" prefHeight="17.0" prefWidth="327.0" textFill="RED" />
+      <Label fx:id="dlabel4" layoutX="163.0" layoutY="253.0" prefHeight="17.0" prefWidth="327.0" textFill="RED" />
+      <Label fx:id="dlabel5" layoutX="165.0" layoutY="303.0" prefHeight="17.0" prefWidth="327.0" textFill="RED" />
+   </children>
+</AnchorPane>

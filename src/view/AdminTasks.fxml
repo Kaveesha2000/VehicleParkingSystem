@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="adminTasksContext" prefHeight="476.0" prefWidth="742.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdminTasksController">
+   <children>
+      <AnchorPane prefHeight="93.0" prefWidth="742.0" style="-fx-background-color: black;">
+         <children>
+            <Label alignment="CENTER" layoutX="-1.0" layoutY="28.0" prefHeight="38.0" prefWidth="742.0" text="Management" textFill="WHITE">
+               <font>
+                  <Font name="Bodoni MT Bold" size="30.0" />
+               </font>
+            </Label>
+            <FontAwesomeIconView fill="WHITE" glyphName="CAR" layoutX="238.0" layoutY="59.0" size="30" text="" AnchorPane.leftAnchor="238.0" AnchorPane.rightAnchor="469.7142868041992" />
+            <FontAwesomeIconView fill="WHITE" glyphName="CAR" layoutX="468.0" layoutY="60.0" size="30" text="" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="93.0" prefHeight="385.0" prefWidth="221.0" style="-fx-background-color: #adadad;">
+         <children>
+            <JFXButton alignment="CENTER" layoutX="19.0" layoutY="31.0" onAction="#goToViewInsideVehicle" prefHeight="38.0" prefWidth="183.0" style="-fx-background-color: black; -fx-background-radius: 180;" text="Parked Vehicles" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton alignment="CENTER" layoutX="19.0" layoutY="88.0" onAction="#goToOutsideVehicles" prefHeight="38.0" prefWidth="183.0" style="-fx-background-color: black; -fx-background-radius: 180;" text="On Delivery Vehicles" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton alignment="CENTER" layoutX="19.0" layoutY="145.0" onAction="#goToAddVehicles" prefHeight="38.0" prefWidth="183.0" style="-fx-background-color: black; -fx-background-radius: 180;" text="Add Vehicles" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton alignment="CENTER" layoutX="20.0" layoutY="204.0" onAction="#goToAddDriver" prefHeight="38.0" prefWidth="183.0" style="-fx-background-color: black; -fx-background-radius: 180;" text="Add Drivers" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton alignment="CENTER" layoutX="19.0" layoutY="305.0" onAction="#goToHomePage" prefHeight="38.0" prefWidth="183.0" style="-fx-background-color: #d10000; -fx-background-radius: 180;" text="Log Out" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <Separator layoutX="12.0" layoutY="274.0" prefWidth="200.0" />
+         </children></AnchorPane>
+      <AnchorPane fx:id="windowContext" layoutX="221.0" layoutY="93.0" prefHeight="385.0" prefWidth="521.0" />
+   </children>
+</AnchorPane>
